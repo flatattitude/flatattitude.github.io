@@ -1,0 +1,61 @@
+body {
+  background-color: #ccffff;
+}
+div {
+  width: 760px;
+  margin: 0 auto;
+  border: 2px double blue;
+  background-color: #fff;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  color: #330066;
+  font-style: italic;
+}
+h3 {
+  text-align: center;
+  color: #ff0000;
+  font-size: 24px;
+  font-style: italic;
+}
+#important_notice {
+  text-align: center;
+  font-size: 20px;
+}
+#highlighted {
+  background-color: yellow;
+  font-weight: bold;
+}
+#letter_spacing {
+  text-align: center;
+  letter-spacing: 5px;
+}
+img {
+  width: 150px;
+  height: 140px;
+  float: left;
+  margin-right: 20px;
+}
+table {
+  width: 300px;
+  border: 2px solid grey;
+}
+th {
+  color: #cc0000;
+}
+tr:nth-child(2n) {
+  background-color: #999999;
+}
+.capitalized_paragraphs::first-letter {
+  font-size: 50px;
+  color: #ff0000;
+  font-weight: bold;
+  font-style: italic;
+}
+ th, td {
+  border: 2px solid grey;
+}
+ul {
+  list-style-image:url(trillium.gif);
+}
