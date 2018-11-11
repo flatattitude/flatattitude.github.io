@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google</title>
+</head>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+  color: grey;
+}
+.flex-container {
+  display: flex;
+}
+ul.left {
+  display: flex;
+  width: 50%;
+  list-style: none;
+}
+ul.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 0;
+  list-style: none;
+}
+ img {
+  width: 20px;
+}
+.right li {
+  align-content: flex-end;
+}
+li {
+  margin: 12px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+main img {
+  width: 400px;
+  margin: 20px;
+}
+input {
+  width: 60%;
+  height: 3em;
+  margin: 30px;
+}
+
+button {
+  margin: 0 20px;
+  padding:  20px;
+  border: none;
+}
+input:hover {
+  box-shadow: 0 3px 3px grey;
+}
+
+footer.flex-container {
+  background: 	rgb(220,220,220);
+  font-family: verdana;
+  color: grey;
+}
+#buttons button {
+  font-family: verdana;
+  color:  grey;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+button:hover {
+  border: 1px solid grey;
+}
+#apps_button, #notifications {
+  width: 25px;
+  height: 25px;
+}
+#sign_in a {
+  width: 60px;
+  background: rgba(0,102,204,0.9);
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+#sign_in:hover {
+  filter: brightness(150%);
+/*   background: lighten(rgba(0, 102, 204, 0.9) 40%); */
+}
+
+@media screen and (max-width: 528px) {
+ #buttons button {
+    margin: 20px;
+  }
+}
+
+</style>
+<body>
+
+        <div class="flex-container">
+                <ul class="left">
+                  <li>About</li>
+                  <li>Store</li>
+                </ul>
+                
+                <ul class="right">
+                  <li>Gmail</li>
+                  <li>Images</li>
+                  <li>
+                    <img src="https://res.cloudinary.com/dmlsccdbx/image/upload/v1541928317/codepen/Google%20Homepage/google-apps.png" alt="apps lauch" id="apps_button">    
+                  </li>
+                  <li><img src="https://res.cloudinary.com/dmlsccdbx/image/upload/v1541928416/codepen/Google%20Homepage/google-notifications.png" alt="notifications button" id="notifications"></li>
+                  <li id="sign_in"><a href="#">Sign In</a></li>
+                </ul>
+                
+                </div>
+                
+                
+                <main>
+                      <img src="https://res.cloudinary.com/dmlsccdbx/image/upload/v1541925296/codepen/Google%20Homepage/googlelogo.png" alt="Google Logo">
+                      <input type="search">
+                      <div id="buttons"> 
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                      </div>
+                </main>
+                
+                <footer class="flex-container">
+                  <ul class="left">
+                    <li>Advertising</li>
+                    <li>Business</li>
+                  </ul>
+                  <ul class="right">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                  </ul>
+                </footer>
+    
+</body>
+</html>
